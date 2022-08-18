@@ -27,7 +27,7 @@ npm install juice-sdk-v1
 1. Import the factory function for a Juicebox contract.
 
    ```js
-   import { getJBDirectory } from "juice-sdk-v1";
+   import { getProjects as getProjectsContract } from "juice-sdk-v1";
    ```
 
 1. Create a JsonRpcProvider.
@@ -42,13 +42,13 @@ npm install juice-sdk-v1
 1. Call the factory function to get an instance of the ethers.js `Contract`.
 
    ```js
-   const JBDirectory = getJBDirectory(provider);
+   const ProjectContract = getProjectsContract(provider);
    ```
 
 1. Start interacting with the contract.
 
    ```js
-   const const terminals = await JBDirectory.terminalsOf(projectId);
+   const const terminals = await ProjectContract.uriOf(projectId);
    ```
 
 ### Examples
