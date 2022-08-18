@@ -16,8 +16,6 @@ Supports your favorite dev environment:
 - ✅ Rollup (supports tree-shaking)
 - ✅ Vite (supports tree-shaking)
 
-Check out the [examples](#examples) to get started 🚀.
-
 ## Installation
 
 ```bash
