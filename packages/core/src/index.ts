@@ -5,53 +5,101 @@ import { Provider } from '@ethersproject/abstract-provider';
 import { Signer } from '@ethersproject/abstract-signer';
 import { Contract } from '@ethersproject/contracts';
 import {
-  abi as Active7DaysFundingCycleBallotABI,
-  address as Active7DaysFundingCycleBallotAddress,
+  abi as Active7DaysFundingCycleBallotABI_mainnet,
+  address as Active7DaysFundingCycleBallotAddress_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/Active7DaysFundingCycleBallot.json';
 import {
-  abi as FundingCyclesABI,
-  address as FundingCyclesAddress,
+  abi as FundingCyclesABI_mainnet,
+  address as FundingCyclesAddress_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/FundingCycles.json';
 import {
-  abi as GovernanceABI,
-  address as GovernanceAddress,
+  abi as GovernanceABI_mainnet,
+  address as GovernanceAddress_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/Governance.json';
 import {
-  abi as ModStoreABI,
-  address as ModStoreAddress,
+  abi as ModStoreABI_mainnet,
+  address as ModStoreAddress_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/ModStore.json';
 import {
-  abi as OperatorStoreABI,
-  address as OperatorStoreAddress,
+  abi as OperatorStoreABI_mainnet,
+  address as OperatorStoreAddress_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/OperatorStore.json';
 import {
-  abi as PricesABI,
-  address as PricesAddress,
+  abi as PricesABI_mainnet,
+  address as PricesAddress_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/Prices.json';
 import {
-  abi as ProjectsABI,
-  address as ProjectsAddress,
+  abi as ProjectsABI_mainnet,
+  address as ProjectsAddress_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/Projects.json';
 import {
-  abi as ProxyPaymentAddressManagerABI,
-  address as ProxyPaymentAddressManagerAddress,
+  abi as ProxyPaymentAddressManagerABI_mainnet,
+  address as ProxyPaymentAddressManagerAddress_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/ProxyPaymentAddressManager.json';
 import {
-  abi as TerminalDirectoryABI,
-  address as TerminalDirectoryAddress,
+  abi as TerminalDirectoryABI_mainnet,
+  address as TerminalDirectoryAddress_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/TerminalDirectory.json';
 import {
-  abi as TerminalV1ABI,
-  address as TerminalV1Address,
+  abi as TerminalV1ABI_mainnet,
+  address as TerminalV1Address_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/TerminalV1.json';
 import {
-  abi as TerminalV1_1ABI,
-  address as TerminalV1_1Address,
+  abi as TerminalV1_1ABI_mainnet,
+  address as TerminalV1_1Address_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/TerminalV1_1.json';
 import {
-  abi as TicketBoothABI,
-  address as TicketBoothAddress,
+  abi as TicketBoothABI_mainnet,
+  address as TicketBoothAddress_mainnet,
 } from '@jbx-protocol/contracts-v1/deployments/mainnet/TicketBooth.json';
+import {
+  abi as Active7DaysFundingCycleBallotABI_rinkeby,
+  address as Active7DaysFundingCycleBallotAddress_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/Active7DaysFundingCycleBallot.json';
+import {
+  abi as FundingCyclesABI_rinkeby,
+  address as FundingCyclesAddress_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/FundingCycles.json';
+import {
+  abi as GovernanceABI_rinkeby,
+  address as GovernanceAddress_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/Governance.json';
+import {
+  abi as ModStoreABI_rinkeby,
+  address as ModStoreAddress_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/ModStore.json';
+import {
+  abi as OperatorStoreABI_rinkeby,
+  address as OperatorStoreAddress_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/OperatorStore.json';
+import {
+  abi as PricesABI_rinkeby,
+  address as PricesAddress_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/Prices.json';
+import {
+  abi as ProjectsABI_rinkeby,
+  address as ProjectsAddress_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/Projects.json';
+import {
+  abi as ProxyPaymentAddressManagerABI_rinkeby,
+  address as ProxyPaymentAddressManagerAddress_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/ProxyPaymentAddressManager.json';
+import {
+  abi as TerminalDirectoryABI_rinkeby,
+  address as TerminalDirectoryAddress_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/TerminalDirectory.json';
+import {
+  abi as TerminalV1ABI_rinkeby,
+  address as TerminalV1Address_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/TerminalV1.json';
+import {
+  abi as TerminalV1_1ABI_rinkeby,
+  address as TerminalV1_1Address_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/TerminalV1_1.json';
+import {
+  abi as TicketBoothABI_rinkeby,
+  address as TicketBoothAddress_rinkeby,
+} from '@jbx-protocol/contracts-v1/deployments/rinkeby/TicketBooth.json';
 import {
   Active7DaysFundingCycleBallot,
   FundingCycles,
@@ -84,65 +132,133 @@ export {
 type SignerOrProvider = Signer | Provider;
 export const getActive7DaysFundingCycleBallot = (
   signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
 ) =>
   new Contract(
-    Active7DaysFundingCycleBallotAddress,
-    Active7DaysFundingCycleBallotABI,
+    network === 'rinkeby'
+      ? Active7DaysFundingCycleBallotAddress_rinkeby
+      : Active7DaysFundingCycleBallotAddress_mainnet,
+    network === 'rinkeby'
+      ? Active7DaysFundingCycleBallotABI_rinkeby
+      : Active7DaysFundingCycleBallotABI_mainnet,
     signerOrProvider,
   ) as Active7DaysFundingCycleBallot;
-export const getFundingCycles = (signerOrProvider: SignerOrProvider) =>
-  new Contract(
-    FundingCyclesAddress,
-    FundingCyclesABI,
-    signerOrProvider,
-  ) as FundingCycles;
-export const getGovernance = (signerOrProvider: SignerOrProvider) =>
-  new Contract(
-    GovernanceAddress,
-    GovernanceABI,
-    signerOrProvider,
-  ) as Governance;
-export const getModStore = (signerOrProvider: SignerOrProvider) =>
-  new Contract(ModStoreAddress, ModStoreABI, signerOrProvider) as ModStore;
-export const getOperatorStore = (signerOrProvider: SignerOrProvider) =>
-  new Contract(
-    OperatorStoreAddress,
-    OperatorStoreABI,
-    signerOrProvider,
-  ) as OperatorStore;
-export const getPrices = (signerOrProvider: SignerOrProvider) =>
-  new Contract(PricesAddress, PricesABI, signerOrProvider) as Prices;
-export const getProjects = (signerOrProvider: SignerOrProvider) =>
-  new Contract(ProjectsAddress, ProjectsABI, signerOrProvider) as Projects;
-export const getProxyPaymentAddressManager = (
+export const getFundingCycles = (
   signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
 ) =>
   new Contract(
-    ProxyPaymentAddressManagerAddress,
-    ProxyPaymentAddressManagerABI,
+    network === 'rinkeby'
+      ? FundingCyclesAddress_rinkeby
+      : FundingCyclesAddress_mainnet,
+    network === 'rinkeby' ? FundingCyclesABI_rinkeby : FundingCyclesABI_mainnet,
+    signerOrProvider,
+  ) as FundingCycles;
+export const getGovernance = (
+  signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
+) =>
+  new Contract(
+    network === 'rinkeby'
+      ? GovernanceAddress_rinkeby
+      : GovernanceAddress_mainnet,
+    network === 'rinkeby' ? GovernanceABI_rinkeby : GovernanceABI_mainnet,
+    signerOrProvider,
+  ) as Governance;
+export const getModStore = (
+  signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
+) =>
+  new Contract(
+    network === 'rinkeby' ? ModStoreAddress_rinkeby : ModStoreAddress_mainnet,
+    network === 'rinkeby' ? ModStoreABI_rinkeby : ModStoreABI_mainnet,
+    signerOrProvider,
+  ) as ModStore;
+export const getOperatorStore = (
+  signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
+) =>
+  new Contract(
+    network === 'rinkeby'
+      ? OperatorStoreAddress_rinkeby
+      : OperatorStoreAddress_mainnet,
+    network === 'rinkeby' ? OperatorStoreABI_rinkeby : OperatorStoreABI_mainnet,
+    signerOrProvider,
+  ) as OperatorStore;
+export const getPrices = (
+  signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
+) =>
+  new Contract(
+    network === 'rinkeby' ? PricesAddress_rinkeby : PricesAddress_mainnet,
+    network === 'rinkeby' ? PricesABI_rinkeby : PricesABI_mainnet,
+    signerOrProvider,
+  ) as Prices;
+export const getProjects = (
+  signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
+) =>
+  new Contract(
+    network === 'rinkeby' ? ProjectsAddress_rinkeby : ProjectsAddress_mainnet,
+    network === 'rinkeby' ? ProjectsABI_rinkeby : ProjectsABI_mainnet,
+    signerOrProvider,
+  ) as Projects;
+export const getProxyPaymentAddressManager = (
+  signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
+) =>
+  new Contract(
+    network === 'rinkeby'
+      ? ProxyPaymentAddressManagerAddress_rinkeby
+      : ProxyPaymentAddressManagerAddress_mainnet,
+    network === 'rinkeby'
+      ? ProxyPaymentAddressManagerABI_rinkeby
+      : ProxyPaymentAddressManagerABI_mainnet,
     signerOrProvider,
   ) as ProxyPaymentAddressManager;
-export const getTerminalDirectory = (signerOrProvider: SignerOrProvider) =>
+export const getTerminalDirectory = (
+  signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
+) =>
   new Contract(
-    TerminalDirectoryAddress,
-    TerminalDirectoryABI,
+    network === 'rinkeby'
+      ? TerminalDirectoryAddress_rinkeby
+      : TerminalDirectoryAddress_mainnet,
+    network === 'rinkeby'
+      ? TerminalDirectoryABI_rinkeby
+      : TerminalDirectoryABI_mainnet,
     signerOrProvider,
   ) as TerminalDirectory;
-export const getTerminalV1 = (signerOrProvider: SignerOrProvider) =>
+export const getTerminalV1 = (
+  signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
+) =>
   new Contract(
-    TerminalV1Address,
-    TerminalV1ABI,
+    network === 'rinkeby'
+      ? TerminalV1Address_rinkeby
+      : TerminalV1Address_mainnet,
+    network === 'rinkeby' ? TerminalV1ABI_rinkeby : TerminalV1ABI_mainnet,
     signerOrProvider,
   ) as TerminalV1;
-export const getTerminalV1_1 = (signerOrProvider: SignerOrProvider) =>
+export const getTerminalV1_1 = (
+  signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
+) =>
   new Contract(
-    TerminalV1_1Address,
-    TerminalV1_1ABI,
+    network === 'rinkeby'
+      ? TerminalV1_1Address_rinkeby
+      : TerminalV1_1Address_mainnet,
+    network === 'rinkeby' ? TerminalV1_1ABI_rinkeby : TerminalV1_1ABI_mainnet,
     signerOrProvider,
   ) as TerminalV1_1;
-export const getTicketBooth = (signerOrProvider: SignerOrProvider) =>
+export const getTicketBooth = (
+  signerOrProvider: SignerOrProvider,
+  { network }: { network: 'mainnet' | 'rinkeby' } = { network: 'mainnet' },
+) =>
   new Contract(
-    TicketBoothAddress,
-    TicketBoothABI,
+    network === 'rinkeby'
+      ? TicketBoothAddress_rinkeby
+      : TicketBoothAddress_mainnet,
+    network === 'rinkeby' ? TicketBoothABI_rinkeby : TicketBoothABI_mainnet,
     signerOrProvider,
   ) as TicketBooth;
